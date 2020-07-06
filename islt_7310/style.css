@@ -1,4 +1,8 @@
-h1 {color: #ff6666;}  
+h1 {color: #1A5276; font-size: 20pt; font-family: sans-serif}  
 footer p {font-size: 8pt;}
 a:hover{color:dodgerblue; text-decoration: none; font-size: 10pt;}
-
+h3 {color: #1F618D; font-size: 14pt;}
+body {color: #212F3C}
+img {float: right;}
+ul::first-line {color: #2471A3}
+body blockquote {font-family: fantasy;}
