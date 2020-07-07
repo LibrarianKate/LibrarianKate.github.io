@@ -1,7 +1,20 @@
+/*************************************************************
+*Description: Primary style sheet for librariankate.github.io
+*Author: Kate Coleman
+*School/Term:  University of Missouri-Columbia, Summer term 2020
+*Developed: June 27, 2020
+*Tested:  July 06, 2020; Passed on Firefox and Chrome browsers.
+*************************************************************/
 body {
-    background-color: #F4F6F7
+    background-color: #F4F6F7;
+    margin: 15px;
 }
+body
 h1 {color: #1A5276; font-size: 20pt; font-family: sans-serif}  
+h1 {text-align: center}
+h1 {
+    font: normal normal 20pt Optima, serif;
+}
 h1 {border: 5px solid #7B7D7D}
 h1 {background: #B3B6B7} 
 h1 {
@@ -9,8 +22,15 @@ h1 {
     margin: 35px;
     padding: 10px;
 }
+h2 {
+    text-align: center;
+}
 footer p {font-size: 8pt;}
-footer {border-top-style: ridge
+footer {
+    border-top-style: ridge;
+}
+footer {
+    padding: 5px;
 }
 a:hover{color:dodgerblue; text-decoration: none; font-size: 10pt;}
 h3 {color: #1F618D; font-size: 14pt;}
