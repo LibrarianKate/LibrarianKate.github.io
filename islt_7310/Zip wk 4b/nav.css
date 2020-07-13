@@ -1,0 +1,42 @@
+#nav_menu ul {    list-style-type: none;}
+
+#nav_menu ul li {float: left;}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;        /*padding above and below a elements*/
+    text-decoration: none;
+    background-color: #85929E;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
+}
+#nav_menu ul li.alastitem {border-right: none;}
+#nav_menu ul li a.current {color: #154360;}
+
+/*************CSS for operation of menus***************/
+
+#nav_menu ul {
+    list-style: none;                 /*Removes bullets from all ul elements*/
+    position: relative;               /*So submenues can be positioned*/
+}
+
+#nav_menu ul li {float: left;}         /*display items horizontally*/
+
+#nav_menu ul ul {
+    display: none;                     /*Don't display submenues until hover of li*/
+    position: absolute;
+    top: 100%;                          /*Position submenue at bottom of main menu*/
+}
+
+#nav_menu ul ul li {float: none;}        /*Display submenus vertically*/
+#nav_menu ul li:hover > ul {            /*Select ul child of li element*/
+    display: block;}                     /*Display submenu on hover of li element*/
+
+#nav_menu > ul::after {
+    content: "";                         /*Add empty content to the end of the first ul*/
+    display: block;                      /*Display that content as a block element*/
+    clear: both;                         /*Stop the floating of the li elements*/
+}
