@@ -15,8 +15,8 @@ h1 {text-align: center}
 h1 {
     font: normal normal 20pt Optima, serif;
 }
-h1 {border: 3px solid #85929E}
-h1 {background: #117864} 
+h1 {border: 5px solid #7B7D7D}
+h1 {background: #B3B6B7} 
 h1 {
     width: 200px;
     margin: 35px;
@@ -40,7 +40,7 @@ img {
     margin: 20px; 
     padding: 10px;
 }
-
+ul::first-line {color: #2471A3}
 body blockquote {font-family: fantasy;}
 
  #hamburger {
@@ -74,10 +74,10 @@ body blockquote {font-family: fantasy;}
 
         /*format all navigation <a> elements*/
         nav a:link{
-            background-color: #154360;
+            background-color: white;
         }
         nav a:hover, nav a:focus {
-            background-color: #117864;
+            background-color: cornsilk;
         }
         nav a:active{
             background-color: aquamarine;
@@ -93,12 +93,12 @@ body blockquote {font-family: fantasy;}
             float:none;
         }
 
-    /*special hover to display the drop-down*/
+        /*special hover to display the drop-down*/
         nav>ul>li:hover>ul{
             display: block;
         }
 
-    /*media queries go here after the main CSS*/
+        /*media queries go here after the main CSS*/
             @media only screen and (max-width:640px) {
                 header {
                     position: relative;
