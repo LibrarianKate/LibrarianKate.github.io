@@ -1,17 +1,22 @@
-#nav_menu ul {    list-style-type: none;}
+#nav_menu ul {    list-style-type: none;
+}
 
-#nav_menu ul li {float: left;}
+#nav_menu ul li {float: left;
+}
 
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    width: 175px;
+    width: 200px;
     padding: 1em 0;        /*padding above and below a elements*/
     text-decoration: none;
     background-color: #85929E;
     color: white;
     font-weight: bold;
-    border-right: 2px solid white;
+    border-right: 2px solid #1B4F72;
+    border-left: 2px solid #1B4F72;
+    border-top: 2px solid #1B4F72;
+    border-bottom: 2px solid #1B4F72;
 }
 #nav_menu ul li.alastitem {border-right: none;}
 #nav_menu ul li a.current {color: #154360;}
@@ -41,11 +46,7 @@
     clear: both;                         /*Stop the floating of the li elements*/
 }
 
-#hamburger {
-            display: none;
-        }
-
-        /*format and position the main navigation menu*/
+/********************format and position the main navigation menu******************/
         nav {
             top: 0px;   
         }
@@ -70,7 +71,7 @@
             margin: 2px;
         }
 
-        /*format all navigation <a> elements*/
+/************format all navigation <a> elements********************/
         nav a:link{
             background-color: #154360;
         }
@@ -81,7 +82,7 @@
             background-color: aquamarine;
         }
 
-        /*position sub-menu or drop-down*/
+/*****************position sub-menu or drop-down********************/
         nav ul>li ul {
             position: absolute;
             top: 100%;
@@ -91,7 +92,25 @@
             float:none;
         }
 
-    /*special hover to display the drop-down*/
+/********************special hover to display the drop-down****************/
         nav>ul>li:hover>ul{
             display: block;
         }
+
+#hamburger {display: none;
+        }
+
+@media (max-width:640px){
+
+#hamburger {
+        display: inline-block;
+        float:left;
+        width: 26px;
+        font-size: 2em;
+        margin: 5px;
+    }
+}
+
+    
+    .mobileHide:hover {
+        display: none;}    
