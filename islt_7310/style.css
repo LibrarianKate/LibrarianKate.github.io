@@ -5,21 +5,26 @@
 *Developed: June 27, 2020
 *Tested:  July 06, 2020; Passed on Firefox and Chrome browsers.
 *************************************************************/
+@font-face { 
+
+font-family: WalterTurncoat;
+src: url(images/WalterTurncoat-Regular.ttf);
+}
+
+
 body {
     width: 85%;
     padding: 0% 3% 5% 3%;
     background-color: #F4F6F7;
     margin: 15px;
     max-width: 1200px;
-}
-body
+} 
+
 h1 {color: #D7DBDD; 
-    font-size: 20pt; 
-    font: normal normal 30pt Optima, serif;
+    font-size: 3.5rem; 
+    font-family: WalterTurncoat;
     text-align: center;
     text-shadow: 1px 1px #626567;
-    font-family: sans-serif;
-    width: 900px;
     border: 5px solid #626567;
     background-color: #16A085;
     margin: 105px;
@@ -27,7 +32,7 @@ h1 {color: #D7DBDD;
 }  
 
 h2 {
-    text-align: center;
+    text-align: left;
 }
 a:hover{color:dodgerblue; text-decoration: none; font-size: 10pt;}
 
@@ -108,10 +113,18 @@ footer {clear: both;}
         margin: 5px;
     }
 }
+
+@media print {
+    *{background: transparent !important;
+        color: black !important;
+        box-shadow: non !important;
+        text-shadow: none !important;
+        margin: 0;
+    }
     
 img {max-width:100%; height: auto;}
 
 body, h1, p, h3, ul, li, blockquote, footer, a, h4, section, table, caption
     
-    {font-size:90% !important;} }
+    {font-size:90% !important;} 
     
