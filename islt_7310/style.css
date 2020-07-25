@@ -55,6 +55,29 @@ body blockquote {
     text-align: center;
 }
 
+/**********************table styling********************/
+
+table {width: 100%;}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;}
+th, td {
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: center;}
+
+thread th {font-size: 1.4rem;
+            background-color: floralwhite;
+            color: darkgray;
+            font-variant: small-caps;}
+
+#degrees td {font-size: 1.25rem;
+            text-align: center;}
+
+#degrees tr:nth-child(even) {background-color: lightblue;}
+
+
 /*************footer styling**************/
 
 .footer {font-size: 10pt;}
