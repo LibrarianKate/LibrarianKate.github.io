@@ -18,6 +18,7 @@ body {
     background-color: #F4F6F7;
     margin: 15px;
     max-width: 1200px;
+    font-size: 17px;
 } 
 
 h1 {color: #D7DBDD; 
@@ -32,7 +33,8 @@ h1 {color: #D7DBDD;
 }  
 
 h2 {
-    text-align: left;
+    text-align: left;  
+    font-size: 1.5rem;
 }
 a:hover{color:dodgerblue; text-decoration: none; font-size: 10pt;}
 
@@ -71,7 +73,7 @@ footer a:link {color:#003366;}
 
 footer {
     border-top-style: ridge;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 10px;
     margin-left: 0;
 }
@@ -99,25 +101,20 @@ footer {width: 100%;
 
 footer {clear: both;}
 
+footer img:hover{
+    transform:scale(1.5);
+}
+
 #hamburger {display: none;
         }
 
 /**************media queries go here after the main CSS**************/
 
- @media (max-width: 640px)  {
-    #hamburger {
-        display: none;
-        float:left;
-        width: 26px;
-        font-size: 2em;
-        margin: 5px;
-    }
-}
 
-@media print {
+ @media print {
     *{background: transparent !important;
         color: black !important;
-        box-shadow: non !important;
+        box-shadow: none !important;
         text-shadow: none !important;
         margin: 0;
     }
@@ -126,5 +123,7 @@ img {max-width:100%; height: auto;}
 
 body, h1, p, h3, ul, li, blockquote, footer, a, h4, section, table, caption
     
-    {font-size:90% !important;} 
+    {font-size: 90% !important;
+     } 
+}
     

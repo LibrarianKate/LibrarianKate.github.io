@@ -1,8 +1,3 @@
-#nav_menu ul {    list-style-type: none;
-}
-
-#nav_menu ul li {float: left;
-}
 
 #nav_menu ul li a {
     text-align: center;
@@ -18,25 +13,25 @@
     border-top: 2px solid #1B4F72;
     border-bottom: 2px solid #1B4F72;
 }
-#nav_menu ul li.alastitem {border-right: none;}
-#nav_menu ul li a.current {color: #154360;}
+
 
 /*************CSS for operation of menus***************/
 
 #nav_menu ul {
     list-style: none;                 /*Removes bullets from all ul elements*/
-    position: relative;               /*So submenues can be positioned*/
+    position: relative;               /*So submenus can be positioned*/
 }
 
 #nav_menu ul li {float: left;}         /*display items horizontally*/
 
 #nav_menu ul ul {
-    display: none;                     /*Don't display submenues until hover of li*/
+    display: none;                     /*Don't display submenus until hover of li*/
     position: absolute;
-    top: 100%;                          /*Position submenue at bottom of main menu*/
+    top: 100%;                          /*Position submenu at bottom of main menu*/
 }
 
 #nav_menu ul ul li {float: none;}        /*Display submenus vertically*/
+
 #nav_menu ul li:hover > ul {            /*Select ul child of li element*/
     display: block;}                     /*Display submenu on hover of li element*/
 
@@ -93,24 +88,24 @@
         }
 
 /********************special hover to display the drop-down****************/
-        nav>ul>li:hover>ul{
-            display: block;
-        }
-
-#hamburger {display: none;
-        }
-
-@media (max-width:640px){
-
-#hamburger {
-        display: inline-block;
-        float:left;
-        width: 26px;
-        font-size: 2em;
-        margin: 5px;
-    }
+        #hamburger {
+display: inline-block;
+float:left;
+width: 26px;
+font-size: 2em;
+margin: 5px;
 }
 
-    
-    .mobileHide:hover {
-        display: none;}    
+nav ul{
+display: none;
+}
+
+nav:hover ul{
+display: block;
+}
+
+#mobileHide:hover {
+display: none;
+}
+
+
